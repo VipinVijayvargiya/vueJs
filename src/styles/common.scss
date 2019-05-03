@@ -1,0 +1,101 @@
+//variable declaration 
+$break-xs: 0px;
+$break-sm: 576px;
+$break-md: 768px;
+$break-lg: 992px;
+$break-xl: 1200px;
+
+$primary-text-color: #00afab;
+$default-width: 100%;
+
+@mixin flex-col () {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin default-button () {
+  background-color: #00afab;
+  height: 40px;
+  border: 1px solid #99dfdd;
+  outline: none;
+  color: #fff;
+  font-size: 15px;
+}
+
+button {
+  @include default-button
+}
+.row {
+  @include flex-col();
+  width: $default-width;
+}
+
+.primary-color, a{
+  color: $primary-text-color;
+  text-decoration: none;
+}
+
+@media screen and (min-width: $break-xs) {
+  .hidden-sm-down{
+    display: none;
+  }
+  @for $i from 1 through 12 {
+    .col-xs-#{$i} {
+        flex-basis: percentage($i/12);
+        max-width: percentage($i/12);
+    }
+  }
+}
+@media screen and (min-width: $break-sm) {
+  @for $i from 1 through 12 {
+    .col-sm-#{$i} {
+        flex-basis: percentage($i/12);
+        max-width: percentage($i/12);
+    }
+  }
+}
+@media screen and (min-width: $break-md) {
+  .hidden-sm-up{
+    display: none;
+  }
+  .hidden-sm-down{
+    display: block;
+  }
+  @for $i from 1 through 12 {
+    .col-md-#{$i} {
+        flex-basis: percentage($i/12);
+        max-width: percentage($i/12);
+    }
+  }
+  
+}
+@media screen and (min-width: $break-lg) {
+  @for $i from 1 through 12 {
+    .col-lg-#{$i} {
+        flex-basis: percentage($i/12);
+        max-width: percentage($i/12);
+    }
+  }
+}
+@media screen and (min-width: $break-xl) {
+  @for $i from 1 through 12 {
+    .col-xl-#{$i} {
+        flex-basis: percentage($i/12);
+        max-width: percentage($i/12);
+    }
+  }
+}
+
+#app {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+body{
+  margin: 0px;
+}
+.text-align-initial {
+  text-align: initial;
+}

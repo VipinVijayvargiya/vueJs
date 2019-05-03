@@ -1,0 +1,17 @@
+.about-container, .contact-container {
+  min-height: 200px;
+}
+.home-container{
+  .button-area {
+    position: relative;
+  }
+  .button-area-background {
+    height: 40vw;
+    width: 100%;
+  }
+  .button-wrapper {
+    max-width: 400px;
+    position: absolute;
+    top: 45%;
+  }
+}

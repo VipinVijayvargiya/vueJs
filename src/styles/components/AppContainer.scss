@@ -1,0 +1,50 @@
+.product-container{
+
+  .demo-container {
+    position: relative;
+  }
+
+  h3 {
+    margin: 40px 0 0;
+  }
+
+  .select-product {
+    color: #616161;
+    border: 1px solid #99dfdd;
+    outline: none;
+    text-align: center;
+    margin-right: 12px;
+    font-size: 15px;
+    padding: 5px;
+    min-width: 75px;
+    display: inline-block;
+    height: 44px;
+  }
+  .select-product--active {
+    background-color: #00afab;
+    color: #fff;
+  }
+  .transaction{
+    li {
+      list-style: initial;
+      margin-left:15px;
+    }
+  }
+  .display-image{
+    width:100%;
+    left: 0;
+  }
+  .certificate{
+    top: 10%;
+    left: 9%;
+
+    width: 25%;
+    position: absolute;
+  }
+  button{
+    width:100%;
+  }
+  ul {
+    padding: 0;
+  }
+}
