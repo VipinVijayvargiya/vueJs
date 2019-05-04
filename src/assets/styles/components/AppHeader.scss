@@ -1,36 +1,46 @@
 .header-container {
   background: #f8f8f8;
+
   .app-header {
     background: #353535;
     color: #fff;
     padding: 8px;
   }
+
   nav {
     padding: 15px;
     border-bottom: 1px solid #c1bfbf;
+    min-height: 50px;
   }
+
   .icon-logo {
-    background: url(../assets/sprites.png) no-repeat -12px -13px;
+    background: url(./assets/images/sprites.png) no-repeat -12px -13px;
     width: 218px;
     height: 32px;
     float: left;
     margin: 10px;
   }
+
   .Menu-items {
     height: 50px;
+
     ul {
       float: right;
     }
   }
+
   li {
     display: inline-block;
     margin: 0 10px;
   }
+
   .app-menu {
     padding: 15px;
+
     a {
       color: #00afab;
       text-decoration: none;
+
       &.router-link-exact-active {
         color: #6d6d79;
       }

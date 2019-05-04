@@ -21,14 +21,10 @@ import { Component, Vue } from "vue-property-decorator";
 import Vuescroll from "vue-scrollto";
 Vue.use(Vuescroll);
 @Component({
-	name: "AppHeader",
-    props: {
-    	assessmentMsg: String
-    }
+	name: 'AppHeader',
+  props: {
+  	assessmentMsg: String
+  }
 })
 export default class AppHeader extends Vue {}
 </script>
-
-<style scoped lang="scss">
-@import "../styles/components/AppHeader.scss";
-</style>

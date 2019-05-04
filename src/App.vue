@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <AppHeader assessmentMsg="Lillydoo Assesment"/>
+    <AppHeader assessmentMsg="Lillydoo Assesment" />
     <router-view />
     <AppFooter />
   </div>
@@ -23,6 +23,7 @@ export default class Home extends Vue {}
 </script>
 
 <style lang="scss">
-@import "./styles/common.scss";
-@import "./styles/views.scss";
+@import "./assets/styles/common.scss";
+@import "./assets/styles/views.scss";
+@import "./assets/styles/components.scss";
 </style>
