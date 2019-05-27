@@ -18,8 +18,6 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import Vuescroll from "vue-scrollto";
-Vue.use(Vuescroll);
 @Component({
 	name: 'AppHeader',
   props: {

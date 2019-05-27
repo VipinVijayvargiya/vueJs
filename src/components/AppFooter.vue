@@ -50,3 +50,13 @@
     </div>
   </div>
 </template>
+<script lang="ts">
+import { Component, Vue } from "vue-property-decorator";
+@Component({
+	name: 'AppFooter',
+  props: {
+  	assessmentMsg: String
+  }
+})
+export default class AppFooter extends Vue {}
+</script>
