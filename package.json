@@ -9,10 +9,6 @@
     "test": "vue-cli-service test:unit debug",
     "debug": "node --inspect node_modules/.bin/jest --runInBand"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/flaviocopes/testing.git"
-  },
   "dependencies": {
     "@types/vue-scrollto": "^2.14.0",
     "core-js": "^2.6.5",
